@@ -17,6 +17,9 @@
 		F827239C27778A8000C3A1BA /* WeatherPastelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F827239B27778A8000C3A1BA /* WeatherPastelTests.swift */; };
 		F82723A627778A8000C3A1BA /* WeatherPastelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82723A527778A8000C3A1BA /* WeatherPastelUITests.swift */; };
 		F82723A827778A8000C3A1BA /* WeatherPastelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82723A727778A8000C3A1BA /* WeatherPastelUITestsLaunchTests.swift */; };
+		F82723B72778C5DC00C3A1BA /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82723B62778C5DC00C3A1BA /* WeatherManager.swift */; };
+		F82723BA2778D49000C3A1BA /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82723B92778D49000C3A1BA /* WeatherData.swift */; };
+		F82723BC2778E11100C3A1BA /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82723BB2778E11100C3A1BA /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		F82723A127778A8000C3A1BA /* WeatherPastelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherPastelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82723A527778A8000C3A1BA /* WeatherPastelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPastelUITests.swift; sourceTree = "<group>"; };
 		F82723A727778A8000C3A1BA /* WeatherPastelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPastelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F82723B62778C5DC00C3A1BA /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		F82723B92778D49000C3A1BA /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		F82723BB2778E11100C3A1BA /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,9 @@
 			children = (
 				F827238127778A7B00C3A1BA /* AppDelegate.swift */,
 				F827238327778A7B00C3A1BA /* SceneDelegate.swift */,
-				F827238527778A7B00C3A1BA /* ViewController.swift */,
-				F827238727778A7B00C3A1BA /* Main.storyboard */,
+				F82723B82778C5E600C3A1BA /* Model */,
+				F82723B52778C5C200C3A1BA /* View */,
+				F82723B42778C5A800C3A1BA /* Controller */,
 				F827238D27778A7F00C3A1BA /* Assets.xcassets */,
 				F827238F27778A7F00C3A1BA /* LaunchScreen.storyboard */,
 				F827239227778A7F00C3A1BA /* Info.plist */,
@@ -128,6 +135,32 @@
 				F82723A727778A8000C3A1BA /* WeatherPastelUITestsLaunchTests.swift */,
 			);
 			path = WeatherPastelUITests;
+			sourceTree = "<group>";
+		};
+		F82723B42778C5A800C3A1BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F827238527778A7B00C3A1BA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F82723B52778C5C200C3A1BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F827238727778A7B00C3A1BA /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F82723B82778C5E600C3A1BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F82723B62778C5DC00C3A1BA /* WeatherManager.swift */,
+				F82723B92778D49000C3A1BA /* WeatherData.swift */,
+				F82723BB2778E11100C3A1BA /* WeatherModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +296,10 @@
 			files = (
 				F827238627778A7B00C3A1BA /* ViewController.swift in Sources */,
 				F827238227778A7B00C3A1BA /* AppDelegate.swift in Sources */,
+				F82723B72778C5DC00C3A1BA /* WeatherManager.swift in Sources */,
+				F82723BC2778E11100C3A1BA /* WeatherModel.swift in Sources */,
 				F827238427778A7B00C3A1BA /* SceneDelegate.swift in Sources */,
+				F82723BA2778D49000C3A1BA /* WeatherData.swift in Sources */,
 				F827238C27778A7B00C3A1BA /* WeatherPastel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
