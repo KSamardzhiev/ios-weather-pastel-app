@@ -32,6 +32,9 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17" scale="large"/>
                                             <color key="baseForegroundColor" name="weather-color"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="locationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tad-gH-TQj"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eYN-sq-Epm">
                                         <rect key="frame" x="59.666666666666657" y="2" width="288.66666666666674" height="36"/>
