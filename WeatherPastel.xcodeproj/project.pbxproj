@@ -57,6 +57,7 @@
 		F82723B62778C5DC00C3A1BA /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		F82723B92778D49000C3A1BA /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		F82723BB2778E11100C3A1BA /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		F82723BD2778F9AB00C3A1BA /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +117,7 @@
 				F827238F27778A7F00C3A1BA /* LaunchScreen.storyboard */,
 				F827239227778A7F00C3A1BA /* Info.plist */,
 				F827238A27778A7B00C3A1BA /* WeatherPastel.xcdatamodeld */,
+				F82723BD2778F9AB00C3A1BA /* Config.xcconfig */,
 			);
 			path = WeatherPastel;
 			sourceTree = "<group>";
@@ -358,6 +360,7 @@
 /* Begin XCBuildConfiguration section */
 		F82723A927778A8000C3A1BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F82723BD2778F9AB00C3A1BA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -419,6 +422,7 @@
 		};
 		F82723AA27778A8000C3A1BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F82723BD2778F9AB00C3A1BA /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

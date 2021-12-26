@@ -13,11 +13,14 @@ protocol WeatherManagerDelegate {
 }
 
 struct WeatherManager {
-    let dataUrl = "https://api.openweathermap.org/data/2.5/weather?appid=827afa6967ec12baf070f638a7febeb3&units=metric"
+    let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String
+    var dataUrl: String { return "https://api.openweathermap.org/data/2.5/weather?appid=\(apiKey ?? "INVALID_KEY")&units=metric"
+    }
     
     var delegate: WeatherManagerDelegate?
     
     func fetchWeatherData(city: String) {
+        print(dataUrl)
         performRequest(with: "\(dataUrl)&q=\(city)")
     }
     
